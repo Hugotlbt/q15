@@ -9,11 +9,11 @@ switch ($action) {
         break;
     case "pageAccueil":
         $Vue->addToCorps(new \App\Vue\Vue_AccueilCaseB());
-        $Vue->addToCorps(new \App\Vue\Vue_AfficherMessage("Vous venez de faire un retour à l'accueil du B"));
+        $Vue->addToCorps(new \App\Vue\Vue_AfficherMessage(""));
         break;
     case "versB":
         $Vue->addToCorps(new \App\Vue\Vue_AccueilCaseB());
-        $Vue->addToCorps(new \App\Vue\Vue_AfficherMessage("Vous venez de changer de case !"));
+        $Vue->addToCorps(new \App\Vue\Vue_AfficherMessage("Calcul de la distance d'un orage"));
         break;
 
 }

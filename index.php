@@ -2,6 +2,8 @@
 include_once "vendor/autoload.php";
 
 use App\Utilitaire\Vue;
+use App\Utilitaire\ImcController;
+use App\Vue\Vue_AccueilCaseA;
 use App\Vue\Vue_BienvenueAllerPagePrecedente;
 use App\Vue\Vue_BienvenueAllerPageSuivante;
 
@@ -20,6 +22,8 @@ switch ($case) {
     case "A":
     case "defaut":
         include ".\src\Controleur\caseA.php";
+    $Personne = new \App\Utilitaire\ImcController($_POST["poids"],$_POST["taille"]);
+    dump($Personne->calculerImc());
         break;
     case "B":
         include ".\src\Controleur\caseB.php";

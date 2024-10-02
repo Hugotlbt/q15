@@ -16,6 +16,7 @@ class Vue_CaseA_PageSuivante extends Vue_Composant
     {
         $str= "
 <h1>Vous êtes dans le contexte A!</h1>
+
 <div  style='    width: 50%;    display: block;    margin: auto;'>  
     Page suivante du contexte A
     <form action='index.php' method='post'>
